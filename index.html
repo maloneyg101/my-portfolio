@@ -134,19 +134,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <section>
   <h2>Contact Me</h2>
   <form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Your Name: <input type="text" name="name" required /></label>
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" required /></label>
-    </p>
-    <p>
-      <label>Message: <textarea name="message" required></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <p>
+    <label>Your Name: <input type="text" name="name" required /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" required /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message" required></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 </section>
 
   <!-- End Page Container -->
